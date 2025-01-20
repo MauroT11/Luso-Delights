@@ -15,7 +15,7 @@ const mrDafoe = Mr_Dafoe({
 });
 
 export const metadata = {
-  title: "Sabor Delights",
+  title: "Luso Delights",
   description: "Experience Authentic Portuguese Flavors",
 };
 

@@ -2,10 +2,13 @@ import Image from "next/image";
 import Carousel from "@/components/home/carousel";
 import Calendar from "@/components/home/Calendar";
 import Testimonials from "@/components/home/Testimonials";
+import TripYelp from "@/components/home/TripYelp";
+import Social from "@/components/home/Social";
+import Newsletter from "@/components/home/Newsletter";
 
 export default function Home() {
   return (
-    <div className="flex flex-col pt-28 pb-8 gap-24 justify-center items-center">
+    <div className="flex flex-col pt-24 pb-8 gap-32 justify-center items-center">
       <div
         className="hero min-h-[80vh] bg-base-200"
         style={{
@@ -33,7 +36,17 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center gap-8 max-w-[90vw]">
         <h1 className="text-3xl text-primary font-bold">Testimonials</h1>
         <Testimonials />
+        <TripYelp />
       </div>
+      <div className="flex flex-col justify-center items-center gap-8 max-w-[90vw]">
+        <h1 className="text-3xl text-primary font-bold ">Follow us on social media!</h1>
+        <Social />
+      </div>
+      <div className="flex flex-col justify-center items-center gap-8 max-w-[90vw]">
+        <h1 className="text-3xl text-primary font-bold ">Newsletter</h1>
+        <Newsletter />
+      </div>
+      <div></div>
     </div>
   );
 }
