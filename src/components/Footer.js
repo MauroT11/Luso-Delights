@@ -19,21 +19,24 @@ export default function Footer() {
                 <div className="flex flex-row gap-16">
                     <nav className="flex flex-col gap-2 text-lg">
                         <div>
-                            <h6 className="footer-title pb-2 font-bold text-2xl">Services</h6>
+                            <h6 className="footer-title pb-2 font-bold text-2xl">Site</h6>
                         </div>
-                        <a className="link link-hover">Branding</a>
-                        <a className="link link-hover">Design</a>
-                        <a className="link link-hover">Marketing</a>
-                        <a className="link link-hover">Advertisement</a>
+                        <a className="link link-hover">Menu</a>
+                        <a className="link link-hover">Reservations</a>
+                        <a className="link link-hover">Events</a>
+                        <a className="link link-hover">About Us</a>
+                        <a className="link link-hover">Careers</a>
                     </nav>
                 <nav className="flex flex-col gap-2 text-lg">
                     <div>
-                        <h6 className="footer-title pb-2 font-bold text-2xl">Company</h6>
+                        <h6 className="footer-title pb-2 font-bold text-2xl">Social</h6>
                     </div>
-                    <a className="link link-hover">About us</a>
-                    <a className="link link-hover">Contact</a>
-                    <a className="link link-hover">Jobs</a>
-                    <a className="link link-hover">Press kit</a>
+                    <a className="link link-hover">Facebook</a>
+                    <a className="link link-hover">Instagram</a>
+                    <a className="link link-hover">TikTok</a>
+                    <a className="link link-hover">X</a>
+                    <a className="link link-hover">YouTube</a>
+                    <a className="link link-hover">Pinterest</a>
                 </nav>
                 <nav className="flex flex-col gap-2 text-lg">
                     <div>

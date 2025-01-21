@@ -9,27 +9,27 @@ import { AiFillInstagram } from "react-icons/ai";
 export default function Social() {
     return (
         <div className="flex  gap-16">
-            <a className="social-column text-5xl hover:text-accent duration-200" target="_blank" href="https://www.facebook.com">
+            <a className="social-column text-5xl hover:text-accent duration-200 transition ease-in-out hover:scale-125" target="_blank" href="https://www.facebook.com">
                 <FaFacebook />
                 {/* <p>Facebook</p> */}
             </a>
-            <a className="social-column text-5xl hover:text-accent duration-200" target="_blank" href="https://www.instagram.com">
+            <a className="social-column text-5xl hover:text-accent duration-200 transition ease-in-out hover:scale-125" target="_blank" href="https://www.instagram.com">
                 <AiFillInstagram />
                 {/* <p>Instagram</p> */}
             </a>
-            <a className="social-column text-5xl hover:text-accent duration-200" target="_blank" href="https://www.tiktok.com">
+            <a className="social-column text-5xl hover:text-accent duration-200 transition ease-in-out hover:scale-125" target="_blank" href="https://www.tiktok.com">
                 <FaTiktok />
                 {/* <p>TikTok</p> */}
             </a>
-            <a className="social-column text-5xl hover:text-accent duration-200" target="_blank" href="https://www.twitter.com">
+            <a className="social-column text-5xl hover:text-accent duration-200 transition ease-in-out hover:scale-125" target="_blank" href="https://www.twitter.com">
                 <FaXTwitter />
                 {/* <p>X</p> */}
             </a>
-            <a className="social-column text-5xl hover:text-accent duration-200" target="_blank" href="https://www.pinterest.com">
+            <a className="social-column text-5xl hover:text-accent duration-200 transition ease-in-out hover:scale-125" target="_blank" href="https://www.pinterest.com">
                 <FaPinterest />
                 {/* <p>Pinterest</p> */}
             </a>
-            <a className="social-column text-5xl hover:text-accent duration-200" target="_blank" href="https://www.youtube.com">
+            <a className="social-column text-5xl hover:text-accent duration-200 transition ease-in-out hover:scale-125" target="_blank" href="https://www.youtube.com">
                 <FaYoutube />
                 {/* <p>YouTube</p> */}
             </a>

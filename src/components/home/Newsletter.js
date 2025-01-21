@@ -12,8 +12,8 @@ export default function Newsletter() {
     };
 
     return (
-        <div>
-            <h2>Stay in the loop with out latest updates!</h2>
+        <div className="flex flex-col gap-4 items-center">
+            <h2 className="text-center text-lg">Stay in the loop with out latest updates!</h2>
             <form onSubmit={handleSubmit} className="flex gap-4">
                 <input
                     type="email"

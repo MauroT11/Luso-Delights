@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
     <header className="flex justify-between text-primary font-bold items-center p-8 bg-white fixed w-full z-10 border-b-2 border-accent">
-        <Link className="text-4xl font-mrdafoe hover:text-accent duration-200" href="/">Luso Delights</Link>
+        <Link className="text-4xl font-mrdafoe hover:text-accent duration-200 transition ease-in-out hover:scale-110 font-mono" href="/">Luso Delights</Link>
         <nav>
             <ul className="flex text-2xl space-x-4">
                 <li><a href="/menu" className="hover:text-accent duration-200">Menu</a></li>
