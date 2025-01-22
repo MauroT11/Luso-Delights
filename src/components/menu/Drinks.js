@@ -10,6 +10,7 @@ export default function Drinks({ drinks }) {
                         <p className="text-md font-bold">£{drink.price.toFixed(2)}</p>
                     </div>
                     <p>{drink.description}</p>
+                    {drink.is_alcoholic && <p className="text-xs">{drink.alcohol_percentage}% ABV</p>}
                     <div className="flex gap-2">
                         {drink.is_alcoholic && <div className="badge badge-warning">Alcoholic</div>}
                     </div>
