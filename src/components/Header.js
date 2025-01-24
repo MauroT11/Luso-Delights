@@ -17,6 +17,7 @@ export default function Header() {
             <ul className="flex text-2xl space-x-4">
                 <li><a href="/menu" className="hover:text-accent duration-200">Menu</a></li>
                 <li><a href="/reservations" className="hover:text-accent duration-200">Reservations</a></li>
+                <li><a href="/catering" className="hover:text-accent duration-200">Catering</a></li>
                 <li><a href="/events" className="hover:text-accent duration-200">Events</a></li>
                 <li><a href="/About" className="hover:text-accent duration-200">About Us</a></li>
             </ul>
