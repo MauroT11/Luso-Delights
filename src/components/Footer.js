@@ -13,6 +13,7 @@ export default function Footer() {
                         <p>Norfolk</p>
                         <p>NR30 1NB</p>
                         <p>United Kingdom</p>
+                        <p>01493 237410 </p>
                     </div>
                     
                 </div>

@@ -39,7 +39,7 @@ export default function Page() {
             if (error) {
                 console.log('error', error)
             } else {
-                console.log(drinks)
+                // console.log(drinks)
                 setDrinks(drinks)
             } 
         }

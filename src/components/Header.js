@@ -19,7 +19,7 @@ export default function Header() {
                 <li><a href="/reservations" className="hover:text-accent duration-200">Reservations</a></li>
                 <li><a href="/catering" className="hover:text-accent duration-200">Catering</a></li>
                 <li><a href="/events" className="hover:text-accent duration-200">Events</a></li>
-                <li><a href="/About" className="hover:text-accent duration-200">About Us</a></li>
+                <li><a href="/story" className="hover:text-accent duration-200">Our Story</a></li>
             </ul>
         </nav>
       

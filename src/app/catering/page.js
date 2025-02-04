@@ -9,7 +9,7 @@ import { FaUserGroup } from "react-icons/fa6";
 import { FaPen } from "react-icons/fa";
 import { FaCheck } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
-// import Terms from '@/components/catering/Terms';
+// import Terms from '@/components/catering/Terms';                     
 
 export default function Page() {
     const [formData, setFormData] = useState({
@@ -76,6 +76,7 @@ export default function Page() {
                         <li>Catering reservations must be made at least <b>one month</b> in advance.</li>
                         <li>Our catering services can accommodate <b>up to 300</b> guests.</li>
                         <li>Please provide any special requests or dietary restrictions in the message field.</li>
+                        <li>You can cancel the catering a <b>week before</b> to the event.</li>
                     </ul>
             </div>
             {/* <Terms /> */}
