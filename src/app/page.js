@@ -1,10 +1,16 @@
 import Image from "next/image";
-import Carousel from "@/components/home/carousel";
+import Carousel from "@/components/carousel";
 import Calendar from "@/components/home/Calendar";
 import Testimonials from "@/components/home/Testimonials";
 import TripYelp from "@/components/home/TripYelp";
 import Social from "@/components/home/Social";
 import Newsletter from "@/components/home/Newsletter";
+import food1 from "../../public/images/food/food1.jpg";
+import food2 from "../../public/images/food/food2.jpg";
+import food3 from "../../public/images/food/food3.jpg";
+import food4 from "../../public/images/food/food4.jpg";
+import food5 from "../../public/images/food/food5.jpg";
+import food6 from "../../public/images/food/food6.jpg";
 
 export default function Home() {
   return (
@@ -27,7 +33,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col justify-center items-center gap-8 max-w-[90vw]">
         <h1 className="text-3xl text-primary font-bold">Featured Dishes</h1>
-        <Carousel />
+        <Carousel food1={food1} food2={food2} food3={food3} food4={food4} food5={food5} food6={food6} />
       </div>
       <div className="flex flex-col justify-center items-center gap-8 max-w-[90vw]">
         <h1 className="text-3xl text-primary font-bold ">Events</h1>

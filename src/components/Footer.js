@@ -22,11 +22,11 @@ export default function Footer() {
                         <div>
                             <h6 className="footer-title pb-2 font-bold text-2xl">Site</h6>
                         </div>
-                        <a className="link link-hover">Menu</a>
-                        <a className="link link-hover">Reservations</a>
-                        <a className="link link-hover">Events</a>
-                        <a className="link link-hover">About Us</a>
-                        <a className="link link-hover">Careers</a>
+                        <a className="link link-hover" href="menu">Menu</a>
+                        <a className="link link-hover" href="reservations">Reservations</a>
+                        <a className="link link-hover" href="/catering">Catering</a>
+                        <a className="link link-hover" href="events">Events</a>
+                        <a className="link link-hover" href="story">Our Story</a>
                     </nav>
                 <nav className="flex flex-col gap-2 text-lg">
                     <div>
@@ -49,8 +49,18 @@ export default function Footer() {
                 </nav>
                 </div>
                 <div>
-                    <p className="footer-title pb-2 font-bold text-2xl">About us</p>
-                    <p className="text-lg ">Luso Delights brings the authentic flavors of Portugal to the heart of Great Yarmouth. Enjoy traditional recipes with a modern twist, crafted with love by Chef Antonio Monterio, straight from Porto and Lisbon.</p>
+                    <div>
+                        <p className="footer-title pb-2 font-bold text-2xl">About us</p>
+                        <p className="text-lg ">Luso Delights brings the authentic flavors of Portugal to the heart of Great Yarmouth. Enjoy traditional recipes with a modern twist, crafted with love by Chef Maria Santos, straight the coast of Algarve.</p>
+                    </div>
+                    <div>
+                        <p className="footer-title py-2 font-bold text-2xl">Opening Hours</p>
+                        <p className="text-lg"><b>Monday - Friday:</b> 12:00pm - 10:00pm</p>
+                        <p className="text-lg"><b>Saturday - Sunday:</b> 10:00am - 11:00pm</p>
+                        <p className="text-lg"><b>Bank Holidays:</b> 10:00am - 11:00pm</p>
+                    </div>
+                    
+
                 </div>
                 </footer>
                 <footer className="footer justify-center bg-primary text-white border-base-300 border-t px-10 py-4">
