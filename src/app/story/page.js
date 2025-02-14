@@ -7,6 +7,12 @@ import atmosphere1 from "../../../public/images/atmosphere1.jpg";
 import atmosphere2 from "../../../public/images/atmosphere2.jpg";
 import charity1 from "../../../public/images/charity1.jpg";
 import charity2 from "../../../public/images/charity2.jpg";
+import food1 from "../../../public/images/food/food1.jpg";
+import food2 from "../../../public/images/food/food2.jpg";
+import food3 from "../../../public/images/food/food3.jpg";
+import food4 from "../../../public/images/food/food4.jpg";
+import gallery1 from "../../../public/images/gallery1.jpg";
+import gallery2 from "../../../public/images/gallery2.jpg";
 import Image from "next/image"
 import Carousel from "@/components/carousel";
 
@@ -17,17 +23,13 @@ export default function Page() {
             <Pageheader 
                 header={'About Us'}
                 description={'Welcome to Sabor Delights! We are passionate about bringing you the best culinary experiences.'}
-                img={"url('/images/4.webp')"} 
+                img={"url('images/banners/storyBanner.jpg')"} 
             />
             <div className="w-3/4 flex flex-col gap-24 items-center">
                 <section className="flex flex-col gap-4 items-center">
                     <h2 className="text-3xl font-bold text-primary">Our Story</h2>
-                    <div className="text-lg flex flex-col gap-8">
+                    <div className="text-lg flex flex-col gap-4">
                         <p>It all began in a quaint village along the sun-drenched Algarve coast of Portugal. Maria Santos, inspired by her grandmother's culinary artistry, spent her childhood in the warmth of her grandmother's kitchen, where simple, fresh ingredients were transformed into unforgettable feasts. Driven by a passion to share her heritage, Maria journeyed to Great Yarmouth, where the scent of the sea reminded her of home.</p>
-                        <div className="flex justify-center gap-4">
-                            {/* <Image src={Chef} width={600} height={300} alt="Photo of Scale" className="rounded-2xl lg:w-min-[600px]" /> */}
-                        </div>
-                        
                         <p>With every dish meticulously crafted from the finest locally-sourced and imported ingredients, our restaurant is a homage to Portugal's rich culinary traditions. From fiery piri-piri chicken to comforting caldo verde, each bite is a journey through Portuguese gastronomy. Our signature dish, bacalhau à brás, brings a taste of Portugal to every table. At our restaurant, we believe in the power of food to bring people together, just as Maria's grandmother did. We invite you to join us in celebrating the warmth, hospitality, and vibrant flavors of Portugal. Welcome to our family, and bom apetite!</p>
                     </div>
                     <div className="flex gap-4">
@@ -40,7 +42,7 @@ export default function Page() {
                 <section className="flex flex-col gap-4 items-center">
                     <h2 className="text-3xl font-bold text-primary">Meet the Team</h2>
                     <div className="flex flex-col gap-4 items-center">
-                        <h3 className="text-lg font-bold text-accent">Our Talented Owner and Chef</h3>
+                        <h3 className="text-lg text-center font-bold text-accent">Our Talented Owner and Chef <br />Maria Santos</h3>
                         <Image src={Chef} width={600} height={300} alt="Photo of Scale" className="rounded-2xl lg:w-min-[600px]" />
                     </div>
                     <div className="flex flex-col gap-4 items-center">
@@ -74,11 +76,7 @@ export default function Page() {
                 <section className="flex flex-col gap-4 items-center">
                     <h2 className="text-3xl font-bold text-primary">Gallery</h2>
                     <p className="text-lg">Check out photos of our dishes and events...</p>
-                    <div className="flex gap-4">
-                            <div className="skeleton h-52 w-52"></div>
-                            <div className="skeleton h-52 w-52"></div>
-                            <div className="skeleton h-52 w-52"></div>
-                        </div>
+                    <Carousel food1={gallery1} food2={food2} food3={food3} food4={gallery2} food5={food1} food6={food4} />
                 </section>
 
                 <section className="flex flex-col gap-4 items-center">

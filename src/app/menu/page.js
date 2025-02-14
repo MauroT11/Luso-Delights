@@ -68,7 +68,7 @@ export default function Page() {
                 <Pageheader 
                 header={'Menu'}
                 description={'Browse through all our dishes and drinks!'}
-                img={"url('/images/4.webp')"} 
+                img={"url('images/banners/menuBanner.jpg')"} 
                 />
                 <div className="flex justify-center my-4 gap-8">
                     <a className="btn btn-accent btn-lg" href="#starters">Starters</a>

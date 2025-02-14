@@ -59,10 +59,10 @@ export default function Page() {
             <Pageheader 
                 header={'Reservations'}
                 description={'Book a table at our restaurant!'}
-                img={"url('/images/4.webp')"} 
+                img={"url('images/banners/reservationBanner.jpg')"} 
             />
             <div className=" mt-8">
-            <p className="mb-4 text-primary text-center font-bold text-2xl">Please note the following rules for creating a reservation:</p>
+            <p className="mb-4 text-primary text-center font-bold text-2xl">Please note the following rules for making a reservation:</p>
                     <ul className="list-disc list-inside text-lg">
                         <li>Reservations can only be made for times between <b>3 PM (15:00)</b> and <b>10 PM (22:00)</b>.</li>
                         <li>Reservations must be made at least <b>one day</b> in advance.</li>

@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function Carousel({food1, food2, food3, food4, food5, food6}) {
     return (
-      <div className="carousel carousel-center border-2 border-accent bg-neutral rounded-box max-w-[70vw] space-x-4 p-4]">
+      <div className="carousel carousel-center border-2 border-accent bg-neutral rounded-box max-w-[90vw] space-x-4 p-4]">
         <div className="carousel-item">
           <Image
             src={food1}

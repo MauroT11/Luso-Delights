@@ -11,6 +11,8 @@ import food3 from "../../public/images/food/food3.jpg";
 import food4 from "../../public/images/food/food4.jpg";
 import food5 from "../../public/images/food/food5.jpg";
 import food6 from "../../public/images/food/food6.jpg";
+import reservationBanner from "../../public/images/banners/reservationBanner.jpg";
+import cateringBanner from "../../public/images/banners/cateringBanner.jpg";
 
 export default function Home() {
   return (
@@ -18,7 +20,7 @@ export default function Home() {
       <div
         className="hero min-h-[80vh] bg-base-200"
         style={{
-          backgroundImage: "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
+          backgroundImage: "url('images/banners/homeBanner.jpg')",
         }}>
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-neutral-content text-center">
@@ -32,11 +34,28 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center gap-8 max-w-[90vw]">
-        <h1 className="text-3xl text-primary font-bold">Featured Dishes</h1>
+        <h1 className="text-4xl text-primary font-bold">Featured Dishes</h1>
         <Carousel food1={food1} food2={food2} food3={food3} food4={food4} food5={food5} food6={food6} />
+        <div>
+          <a href="/menu" className="hover:text-accent duration-200 text-primary font-bold text-3xl">View Our Menu</a>
+        </div>
+      </div>
+      <div className="flex items-end text-center gap-32 max-w-[90vw]">
+        <div className="flex flex-col items-center gap-4">
+          <h1 className="text-4xl text-primary font-bold">Reserve a table</h1>
+          <Image src={reservationBanner} width={500} height={500} alt="Reservations" className="rounded-lg" />
+          <p className="text-lg">Experience exceptional dining at our restaurant!</p>
+          <a href="/reservations" className="hover:text-accent duration-200 text-primary font-bold text-2xl">Reserve Now</a>
+        </div>
+        <div className="flex flex-col items-center gap-4">
+          <h1 className="text-4xl text-primary font-bold">Book Catering</h1>
+          <Image src={cateringBanner} width={500} height={500} alt="Reservations" className="rounded-lg" />
+          <p className="text-lg">Planning an event? Let us cater to your needs with our delightful menu options.</p>
+          <a href="/catering" className="hover:text-accent duration-200 text-primary font-bold text-2xl">Book Catering</a>
+        </div>
       </div>
       <div className="flex flex-col justify-center items-center gap-8 max-w-[90vw]">
-        <h1 className="text-3xl text-primary font-bold ">Events</h1>
+        <h1 className="text-4xl text-primary font-bold ">Events</h1>
         <Calendar />
       </div>
       <div className="flex flex-col justify-center items-center gap-8 max-w-[90vw]">

@@ -68,7 +68,7 @@ export default function Page() {
             <Pageheader 
                 header={'Catering'}
                 description={'Book us for your next event!'}
-                img={"url('/images/4.webp')"} 
+                img={"url('images/banners/cateringBanner.jpg')"} 
             />
             <div className=" mt-8">
             <p className="mb-4 text-primary text-center font-bold text-2xl">Please note the following rules for creating a reservation:</p>

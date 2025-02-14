@@ -3,7 +3,7 @@ import React from 'react';
 export default function Pageheader({ header, description, img }) {
     return (
         <div
-        className="relative bg-cover bg-center py-20 min-w-full"
+        className="relative bg-cover bg-center py-28 min-w-full"
         style={{ backgroundImage: `${img}` }}
         >
             <div className="absolute inset-0 bg-black bg-opacity-50"></div>

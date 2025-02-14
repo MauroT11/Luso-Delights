@@ -11,8 +11,8 @@ export default function Calendar() {
       initialView="dayGridMonth"
       contentHeight="auto"
       events={[
-    { title: 'event 1', date: '2025-04-01' },
-    { title: 'event 2', date: '2025-04-02' }
+    { title: 'Easter', date: '2025-04-01' },
+    { title: 'Valentines', date: '2025-02-14' }
   ]}
     />
   )
