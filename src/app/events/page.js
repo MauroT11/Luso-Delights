@@ -2,11 +2,12 @@ import React from 'react';
 // import Calendar from 'react-calendar';
 // import 'react-calendar/dist/Calendar.css';
 import Calendar from '@/components/home/Calendar';
+import Pageheader from '@/components/Pageheader';
 
 const events = [
-    { date: new Date(2023, 10, 15), event: 'Private Party' },
-    { date: new Date(2023, 10, 20), event: 'Corporate Event' },
-    { date: new Date(2023, 10, 25), event: 'Wedding Reception' },
+    { date: new Date(2025, 10, 15), event: 'Private Party' },
+    { date: new Date(2025, 10, 20), event: 'Corporate Event' },
+    { date: new Date(2025, 10, 25), event: 'Wedding Reception' },
 ];
 
 function tileContent({ date, view }) {
@@ -18,10 +19,18 @@ function tileContent({ date, view }) {
 
 export default function Page() {
     return (
-        <div className="flex flex-col pt-24 pb-8 justify-center items-center">
-            <h1>Restaurant Busy Periods</h1>
-            {/* <Calendar tileContent={tileContent} /> */}
-            <Calendar />
+        <div className="flex flex-col gap-8 pt-24 pb-8 justify-center items-center">
+            <div className="flex flex-col gap-8 items-center min-w-full">
+                <Pageheader 
+                header={'Events'}
+                description={''}
+                img={"url('images/banners/menuBanner.jpg')"} 
+                />
+            </div>
+            <div className="px-16">
+                <Calendar />
+            </div>
+            
         </div>
     );
 }

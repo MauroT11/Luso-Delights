@@ -27,8 +27,8 @@ export default function Home() {
           <div className="absolute bottom-40">
             <h1 className="mb-5 text-5xl font-bold text-primary">Experience Authentic Portuguese Flavours</h1>
             <div className="flex justify-center gap-8">
-              <button className="btn btn-primary text-2xl">Get Started</button>
-              <button className="btn btn-primary text-2xl">Get Started</button>
+              <a className="btn btn-primary text-2xl" href="/menu">Make a Reservartion</a>
+              {/* <button className="btn btn-primary text-2xl">Get Started</button> */}
             </div>
           </div>
         </div>

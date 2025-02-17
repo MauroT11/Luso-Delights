@@ -32,12 +32,12 @@ export default function Footer() {
                     <div>
                         <h6 className="footer-title pb-2 font-bold text-2xl">Social</h6>
                     </div>
-                    <a className="link link-hover">Facebook</a>
-                    <a className="link link-hover">Instagram</a>
-                    <a className="link link-hover">TikTok</a>
-                    <a className="link link-hover">X</a>
-                    <a className="link link-hover">YouTube</a>
-                    <a className="link link-hover">Pinterest</a>
+                    <a className="link link-hover" href="https://www.facebook.com/" target="_blank">Facebook</a>
+                    <a className="link link-hover" href="https://www.instagram.com">Instagram</a>
+                    <a className="link link-hover" href="https://www.tiktok.com">TikTok</a>
+                    <a className="link link-hover" href="https://www.x.com">X</a>
+                    <a className="link link-hover" href="https://www.youtube.com">YouTube</a>
+                    <a className="link link-hover" href="https://www.pinterest.com">Pinterest</a>
                 </nav>
                 <nav className="flex flex-col gap-2 text-lg">
                     <div>
