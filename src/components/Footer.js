@@ -43,9 +43,9 @@ export default function Footer() {
                     <div>
                         <h6 className="footer-title pb-2 font-bold text-2xl">Legal</h6>
                     </div>
-                    <a className="link link-hover">Terms of use</a>
-                    <a className="link link-hover">Privacy policy</a>
-                    <a className="link link-hover">Cookie policy</a>
+                    <a className="link link-hover" href="/legal/termsofuse">Terms of use</a>
+                    <a className="link link-hover" href="/legal/privacypolicy">Privacy policy</a>
+                    <a className="link link-hover" href="/legal/cookiepolicy">Cookie policy</a>
                 </nav>
                 </div>
                 <div>

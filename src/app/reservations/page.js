@@ -60,6 +60,7 @@ export default function Page() {
                 header={'Reservations'}
                 description={'Book a table at our restaurant!'}
                 img={"url('images/banners/reservationBanner.jpg')"} 
+                padding={20}
             />
             <div className=" mt-8">
             <p className="mb-4 text-primary text-center font-bold text-2xl">Please note the following rules for making a reservation:</p>
@@ -91,9 +92,9 @@ export default function Page() {
                         <input type="number" id="guests" name="guests" min="1" value={formData.guests} onChange={handleChange} placeholder="Number of Guests" className="w-full" />
                     </label>
                     <textarea id="message" name="message" placeholder="Special Requests" value={formData.message} onChange={handleChange} className="textarea textarea-lg textarea-accent w-full px-3" />
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-center">
                         <button
-                            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                            className="bg-blue-500 btn-wide hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline "
                             type="submit"
                         >
                             Reserve

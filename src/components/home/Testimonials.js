@@ -3,9 +3,13 @@ import { FaStar } from "react-icons/fa";
 
 export default function Testimonials() {
     return (
-        <div>
-            <p className="text-center">Here are some testimonials from our satisfied customers.</p>
-            <div className="grid grid-cols-3 gap-4 text-white">
+        <div className="flex flex-col gap-8 items-center max-w-[90vw]">
+            <div className="text-center flex flex-col gap-4">
+                <h1 className="text-3xl text-primary font-bold">Testimonials</h1>
+                <p className="text-center text-lg text-primary">Here are some testimonials from our satisfied customers.</p>
+            </div>
+            
+            <div className="grid grid-cols-3 gap-8 text-white">
                 <div className="p-4 border text-center rounded shadow-md shadow-accent border-accent bg-accent">
                     <p className="text-2xl">&ldquo;Amazing food and great service!&rdquo;</p>
                     <p className="italic">- Customer 1</p>
@@ -73,6 +77,7 @@ export default function Testimonials() {
                     </div>
                 </div>
             </div>
+            
         </div>
     );
 }

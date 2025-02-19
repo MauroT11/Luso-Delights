@@ -24,6 +24,7 @@ export default function Page() {
                 header={'About Us'}
                 description={'Welcome to Sabor Delights! We are passionate about bringing you the best culinary experiences.'}
                 img={"url('images/banners/storyBanner.jpg')"} 
+                padding={28}
             />
             <div className="w-3/4 flex flex-col gap-24 items-center">
                 <section className="flex flex-col gap-4 items-center">
@@ -32,10 +33,10 @@ export default function Page() {
                         <p>It all began in a quaint village along the sun-drenched Algarve coast of Portugal. Maria Santos, inspired by her grandmother's culinary artistry, spent her childhood in the warmth of her grandmother's kitchen, where simple, fresh ingredients were transformed into unforgettable feasts. Driven by a passion to share her heritage, Maria journeyed to Great Yarmouth, where the scent of the sea reminded her of home.</p>
                         <p>With every dish meticulously crafted from the finest locally-sourced and imported ingredients, our restaurant is a homage to Portugal's rich culinary traditions. From fiery piri-piri chicken to comforting caldo verde, each bite is a journey through Portuguese gastronomy. Our signature dish, bacalhau à brás, brings a taste of Portugal to every table. At our restaurant, we believe in the power of food to bring people together, just as Maria's grandmother did. We invite you to join us in celebrating the warmth, hospitality, and vibrant flavors of Portugal. Welcome to our family, and bom apetite!</p>
                     </div>
-                    <div className="flex gap-4">
-                        {/* <Image src={cooks} width={600} height={300} alt="Photo of Scale" className="rounded-2xl lg:w-min-[600px]" />
-                        <Image src={servants} width={600} height={300} alt="Photo of Scale" className="rounded-2xl lg:w-min-[600px]" /> */}
-                    </div>
+                    {/* <div className="flex gap-4">
+                        <Image src={cooks} width={600} height={300} alt="Photo of Scale" className="rounded-2xl lg:w-min-[600px]" />
+                        <Image src={servants} width={600} height={300} alt="Photo of Scale" className="rounded-2xl lg:w-min-[600px]" />
+                    </div> */}
                     
                 </section>
 

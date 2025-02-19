@@ -6,13 +6,19 @@ import dayGridPlugin from '@fullcalendar/daygrid' // a plugin!
 
 export default function Calendar() {
   return (
-    <FullCalendar
+    <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-4 text-center">
+        <h1 className="text-4xl text-primary font-bold ">Events</h1>
+        <h3 className="text-lg text-primary">Explore our restaurant&apos;s holiday schedule to plan your visits.</h3>
+      </div>
+      
+      <FullCalendar
       plugins={[ dayGridPlugin ]}
       initialView="dayGridMonth"
       contentHeight="auto"
       events={[
-      { title: 'Valentines', date: '2025-02-14' },
-      { title: "New Year's Day (Ano Novo)", date: '2025-01-01' },
+        { title: 'Valentines', date: '2025-02-14' },
+        { title: "New Year's Day (Ano Novo)", date: '2025-01-01' },
         { title: 'Good Friday (Sexta-feira Santa)', date: '2025-04-18' }, // Example date
         { title: 'Easter Sunday (Domingo de Páscoa)', date: '2025-04-20' }, // Example date
         { title: 'Freedom Day (Dia da Liberdade)', date: '2025-04-25' },
@@ -26,6 +32,8 @@ export default function Calendar() {
         { title: 'Immaculate Conception (Imaculada Conceição)', date: '2025-12-08' },
         { title: 'Christmas Day (Natal)', date: '2025-12-25' }
       ]}
-    />
+      />
+    </div>
+    
   )
 }

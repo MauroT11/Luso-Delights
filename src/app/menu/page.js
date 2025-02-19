@@ -69,6 +69,7 @@ export default function Page() {
                 header={'Menu'}
                 description={'Browse through all our dishes and drinks!'}
                 img={"url('images/banners/menuBanner.jpg')"} 
+                padding={20}
                 />
                 <div className="flex justify-center my-4 gap-8">
                     <a className="btn btn-accent btn-lg" href="#starters">Starters</a>
@@ -79,7 +80,7 @@ export default function Page() {
                 </div>
             </div>
             
-            <div id="starters" className="flex flex-col gap-8 items-center pt-28">
+            <div id="starters" className="flex flex-col gap-8 items-center pt-16">
                 <h2 className="text-3xl text-primary font-bold">Starters</h2>
                 <Dishes dishes={dishes.filter(dish => dish.category_id === 1)} />
             </div>

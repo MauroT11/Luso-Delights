@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Pageheader({ header, description, img }) {
+export default function Pageheader({ header, description, img , padding }) {
     return (
         <div
-        className="relative bg-cover bg-center py-28 min-w-full"
+        className={`relative bg-cover bg-center py-${padding} min-w-full`}
         style={{ backgroundImage: `${img}` }}
         >
             <div className="absolute inset-0 bg-black bg-opacity-50"></div>

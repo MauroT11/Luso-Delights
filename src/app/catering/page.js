@@ -69,6 +69,7 @@ export default function Page() {
                 header={'Catering'}
                 description={'Book us for your next event!'}
                 img={"url('images/banners/cateringBanner.jpg')"} 
+                padding={20}
             />
             <div className=" mt-8">
             <p className="mb-4 text-primary text-center font-bold text-2xl">Please note the following rules for creating a reservation:</p>
@@ -77,6 +78,7 @@ export default function Page() {
                         <li>Our catering services can accommodate <b>up to 300</b> guests.</li>
                         <li>Please provide any special requests or dietary restrictions in the message field.</li>
                         <li>You can cancel the catering a <b>week before</b> to the event.</li>
+                        <li>We provide our service between 12pm to 1am.</li>
                     </ul>
             </div>
             {/* <Terms /> */}
@@ -111,7 +113,7 @@ export default function Page() {
                                 value={formData.fromTime}
                                 onChange={handleChange}
                                 className="input input-accent w-full max-w-lg"
-                                min="09:00"
+                                min="12:00"
                                 max="15:00"
                                 step="3600"
                             />
