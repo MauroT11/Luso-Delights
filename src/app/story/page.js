@@ -85,7 +85,7 @@ export default function Page() {
                         <div className="grid grid-cols-3 gap-4 py-8">
                         <div>   
                             <div className="flex flex-col text-2xl gap-4">
-                                <h2 className="text-2xl font-bold text-accent">Contact Us</h2>
+                                <h2 className="text-2xl font-bold text-primary">Contact Us</h2>
                                 <p>General enquires:<br /><a href="mailto:info@lusodelights.com" className="text-primary hover:text-accent">info@lusodelights.com</a></p>
                                 <p>Reservation enquires:<br /><a href="mailto:reservations@lusodelights.com" className="text-primary hover:text-accent">reservations@lusodelights.com</a></p>
                                 <p>Catering Enquires:<br /><a href="mailto:catering@lusodelights.com" className="text-primary hover:text-accent">catering@lusodelights.com</a></p>
@@ -94,7 +94,7 @@ export default function Page() {
                             
                         </div>
                         <div className="flex flex-col items-center gap-4 text-2xl">
-                            <h2 className="text-2xl font-bold text-accent">Address</h2>
+                            <h2 className="text-2xl font-bold text-primary">Address</h2>
                             <p>10 Market Street</p>
                             <p>Great Yarmouth</p>
                             <p>Norfolk</p>
@@ -102,11 +102,11 @@ export default function Page() {
                             <p>United Kingdom</p>
                         </div>
                         <div className="flex flex-col items-center gap-4">
-                           <h2 className="text-2xl font-bold text-accent">Opening hours</h2>
+                           <h2 className="text-2xl font-bold text-primary">Opening hours</h2>
                             <div className="text-2xl text-center flex flex-col gap-4">
-                                <p><span className="text-primary font-bold">Monday - Friday</span><br /><span className="tracking-widest">12:00pm - 10:00pm</span></p>
-                                <p><span className="text-primary font-bold">Saturday - Sunday</span><br /><span className="tracking-widest">10:00am - 11:00pm</span></p>
-                                <p><span className="text-primary font-bold">Bank Holidays</span><br /><span className="tracking-widest">10:00am - 11:00pm</span></p>
+                                <p><span className="text-accent font-bold">Monday - Friday</span><br /><span className="tracking-widest">12:00pm - 10:00pm</span></p>
+                                <p><span className="text-accent font-bold">Saturday - Sunday</span><br /><span className="tracking-widest">10:00am - 11:00pm</span></p>
+                                <p><span className="text-accent font-bold">Bank Holidays</span><br /><span className="tracking-widest">10:00am - 11:00pm</span></p>
                             </div>
                         </div>
                     </div>

@@ -2,6 +2,7 @@ import { REM, Mr_Dafoe } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
+import CookieConsent from '../components/CookieConsent';
 
 const rem = REM({
   variable: "--font-rem",
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
+        <CookieConsent />
       </body>
     </html>
   );
