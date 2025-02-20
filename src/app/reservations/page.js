@@ -9,6 +9,7 @@ import { FaUserGroup } from "react-icons/fa6";
 import { FaPen } from "react-icons/fa";
 import { FaCheck } from "react-icons/fa";
 
+
 export default function Page() {
     const [formData, setFormData] = useState({
         name: '',
@@ -60,7 +61,7 @@ export default function Page() {
                 header={'Reservations'}
                 description={'Book a table at our restaurant!'}
                 img={"url('images/banners/reservationBanner.jpg')"} 
-                padding={20}
+                padding={28}
             />
             <div className=" mt-8">
             <p className="mb-4 text-primary text-center font-bold text-2xl">Please note the following rules for making a reservation:</p>
@@ -105,8 +106,11 @@ export default function Page() {
             {showModal && (
                 <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
                     <div className="flex flex-col gap-2 bg-white items-center p-8 rounded shadow-lg min-w-[400px]">
-                        <div className="flex flex-col gap-4">
-                            <h2 className="text-2xl font-bold mb-4">Reservation Details</h2>
+                        <div className="flex flex-col text-lg gap-4">
+                            <div className="text-center">
+                                <h2 className="text-2xl font-bold mb-4">Reservation Details</h2>
+                                <p className="text-sm">Please review your reservation details below.</p>
+                            </div>
                             <p><strong>Name:</strong> {formData.name}</p>
                             <p><strong>Email:</strong> {formData.email}</p>
                             <p><strong>Phone:</strong> {formData.phone}</p>

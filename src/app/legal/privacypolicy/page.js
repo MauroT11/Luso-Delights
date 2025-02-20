@@ -7,7 +7,7 @@ export default function Page() {
                                 <Pageheader 
                                 header={'Privacy Policy'}
                                 description={'Welcome to our Privacy Policy page. Your privacy is critically important to us.'}
-                                img={"url('images/banners/menuBanner.jpg')"} 
+                                img={"url('../images/banners/lega.jpg')"} 
                                 padding={12}
                                 />
                             </div>

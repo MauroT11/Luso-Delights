@@ -8,7 +8,7 @@ export default function Page() {
                         <Pageheader 
                         header={'Terms of Use'}
                         description={'Welcome to Sabor Delights Terms of Use. Please read these terms of use carefully before using our website.'}
-                        img={"url('images/banners/menuBanner.jpg')"} 
+                        img={"url('../images/banners/legal.jpg')"} 
                         padding={12}
                         />
                     </div>

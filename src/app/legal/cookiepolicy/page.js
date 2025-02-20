@@ -7,8 +7,7 @@ export default function Page() {
                 <Pageheader 
                 header={'Cookie Policy'}
                 description={'This is the Cookie Policy for Sabor Delights, accessible from our website.'}
-                img={"url('images/banners/menuBanner.jpg')"} 
-                padding={12}
+                img={"url('../images/banners/legal.jpg')"} 
                 />
             </div>
             <div className="flex text-lg flex-col gap-8 max-w-[60vw]">
