@@ -8,7 +8,7 @@ import { AiFillInstagram } from "react-icons/ai";
 
 export default function Social() {
     return (
-        <div className="flex  gap-16">
+        <div className="flex flex-wrap justify-center gap-16">
             <a className="social-column text-5xl hover:text-accent duration-200 transition ease-in-out hover:scale-125" target="_blank" href="https://www.facebook.com">
                 <FaFacebook />
                 {/* <p>Facebook</p> */}

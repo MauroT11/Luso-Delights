@@ -22,12 +22,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth">
-    
-      <body
-      >
+    <html lang="en" className={`scroll-smooth ${rem.variable} ${mrDafoe.variable}`}>
+      <body className="min-h-screen flex flex-col">
         <Header />
-        {children}
+        <main className="flex-grow">
+          {children}
+        </main>
         <Footer />
         <CookieConsent />
       </body>

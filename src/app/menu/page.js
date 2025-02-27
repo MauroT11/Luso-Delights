@@ -18,42 +18,35 @@ export default function Page() {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-
         const fetchDishes = async () => {
-            
             let { data: dishes, error } = await supabase
                 .from('dishes')
                 .select('*')
             if (error) {
                 console.log('error', error)
             } else {
-                // console.log(dishes)
                 setDishes(dishes)
             } 
         }
 
         const fetchDrinks = async () => {
-            
             let { data: drinks, error } = await supabase
                 .from('drinks')
                 .select('*')
             if (error) {
                 console.log('error', error)
             } else {
-                // console.log(drinks)
                 setDrinks(drinks)
             } 
         }
 
         const fetchSides = async () => {
-            
             let { data: sides, error } = await supabase
                 .from('sides')
                 .select('*')
             if (error) {
                 console.log('error', error)
             } else {
-                // console.log(sides)
                 setSides(sides)
             } 
         }
@@ -67,42 +60,59 @@ export default function Page() {
         };
         
         fetchData();
-    }, [])
+    }, []);
 
     return (
-        <div className="flex flex-col pt-24 pb-8 justify-center items-center">
-            <div className="flex flex-col gap-8 items-center min-w-full">
+        <div className="flex flex-col pt-20 md:pt-24 pb-8 justify-center items-center">
+            <div className="flex flex-col gap-6 md:gap-8 items-center w-full">
                 <Pageheader 
                 header={'Menu'}
                 description={'Browse through all our dishes and drinks!'}
                 img={"url('images/banners/menuBanner.jpg')"} 
                 padding={20}
                 />
-                <div className="w-full max-w-4xl mx-auto overflow-x-auto">
-                    <div className="flex justify-center my-8 px-4 gap-4 md:gap-6">
+                
+                {/* Category Navigation - Mobile Optimized */}
+                <div className="w-full max-w-full px-2 sm:px-4">
+                    <div className="flex flex-wrap justify-center gap-2 py-3 px-2">
                         <a 
-                            className="btn border-none min-w-[110px] rounded-full bg-primary text-white hover:bg-primary hover:text-white font-bold shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105" 
-                            href="#starters">
+                            className="btn btn-sm md:btn-md border-none min-w-[80px] md:min-w-[110px] rounded-full 
+                                bg-primary text-white font-bold shadow-md hover:shadow-lg transition-all duration-300 
+                                hover:scale-105"
+                            href="#starters"
+                        >
                             Starters
                         </a>
                         <a 
-                            className="btn border-none min-w-[110px] rounded-full bg-primary text-white hover:bg-primary hover:text-white font-bold shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105" 
-                            href="#mains">
+                            className="btn btn-sm md:btn-md border-none min-w-[80px] md:min-w-[110px] rounded-full 
+                                bg-primary text-white font-bold shadow-md hover:shadow-lg transition-all duration-300 
+                                hover:scale-105"
+                            href="#mains"
+                        >
                             Mains
                         </a>
                         <a 
-                            className="btn border-none min-w-[110px] rounded-full bg-primary text-white hover:bg-primary hover:text-white font-bold shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105" 
-                            href="#desserts">
+                            className="btn btn-sm md:btn-md border-none min-w-[80px] md:min-w-[110px] rounded-full 
+                                bg-primary text-white font-bold shadow-md hover:shadow-lg transition-all duration-300 
+                                hover:scale-105"
+                            href="#desserts"
+                        >
                             Desserts
                         </a>
                         <a 
-                            className="btn border-none min-w-[110px] rounded-full bg-primary text-white hover:bg-primary hover:text-white font-bold shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105" 
-                            href="#sides">
+                            className="btn btn-sm md:btn-md border-none min-w-[80px] md:min-w-[110px] rounded-full 
+                                bg-primary text-white font-bold shadow-md hover:shadow-lg transition-all duration-300 
+                                hover:scale-105"
+                            href="#sides"
+                        >
                             Sides
                         </a>
                         <a 
-                            className="btn border-none min-w-[110px] rounded-full bg-primary text-white hover:bg-primary hover:text-white font-bold shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105" 
-                            href="#drinks">
+                            className="btn btn-sm md:btn-md border-none min-w-[80px] md:min-w-[110px] rounded-full 
+                                bg-primary text-white font-bold shadow-md hover:shadow-lg transition-all duration-300 
+                                hover:scale-105"
+                            href="#drinks"
+                        >
                             Drinks
                         </a>
                     </div>
@@ -114,25 +124,25 @@ export default function Page() {
                     <span className="loading loading-spinner loading-lg text-primary"></span>
                 </div>
             ) : (
-                <div>
-                    <div id="starters" className="flex flex-col gap-8 items-center pt-16">
-                        <h2 className="text-3xl text-primary font-bold">Starters</h2>
+                <div className="w-full px-4 sm:px-6 md:px-8">
+                    <div id="starters" className="flex flex-col gap-6 md:gap-8 items-center pt-10 md:pt-16">
+                        <h2 className="text-2xl md:text-3xl text-primary font-bold">Starters</h2>
                         <Dishes dishes={dishes?.filter(dish => dish.category_id === 1) || []} />
                     </div>
-                    <div id="mains" className="flex flex-col gap-8 items-center pt-28">
-                        <h2 className="text-3xl text-primary font-bold">Mains</h2>
+                    <div id="mains" className="flex flex-col gap-6 md:gap-8 items-center pt-20 md:pt-28">
+                        <h2 className="text-2xl md:text-3xl text-primary font-bold">Mains</h2>
                         <Dishes dishes={dishes?.filter(dish => dish.category_id === 2) || []} />
                     </div>
-                    <div id="desserts" className="flex flex-col gap-8 items-center pt-28">
-                        <h2 className="text-3xl text-primary font-bold">Desserts</h2>
+                    <div id="desserts" className="flex flex-col gap-6 md:gap-8 items-center pt-20 md:pt-28">
+                        <h2 className="text-2xl md:text-3xl text-primary font-bold">Desserts</h2>
                         <Dishes dishes={dishes?.filter(dish => dish.category_id === 3) || []} />
                     </div>
-                    <div id="sides" className="flex flex-col gap-8 items-center pt-28">
-                        <h2 className="text-3xl text-primary font-bold">Sides</h2>
+                    <div id="sides" className="flex flex-col gap-6 md:gap-8 items-center pt-20 md:pt-28">
+                        <h2 className="text-2xl md:text-3xl text-primary font-bold">Sides</h2>
                         <Dishes dishes={sides || []} />
                     </div>
-                    <div id="drinks" className="flex flex-col gap-8 items-center pt-28">
-                        <h2 className="text-3xl text-primary font-bold">Drinks</h2>
+                    <div id="drinks" className="flex flex-col gap-6 md:gap-8 items-center pt-20 md:pt-28">
+                        <h2 className="text-2xl md:text-3xl text-primary font-bold">Drinks</h2>
                         <Drinks drinks={drinks || []} />
                     </div>
                 </div>
