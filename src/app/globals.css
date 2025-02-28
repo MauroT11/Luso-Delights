@@ -30,3 +30,66 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Add to globals.css */
+.calendar-container .fc {
+  --fc-border-color: rgba(21, 76, 121, 0.2);
+  --fc-button-bg-color: #154c79;
+  --fc-button-border-color: #0e3354;
+  --fc-button-hover-bg-color: #0e3354;
+  --fc-button-hover-border-color: #072544;
+  --fc-button-active-bg-color: #072544;
+  --fc-button-active-border-color: #051a33;
+  --fc-event-bg-color: #154c79;
+  --fc-event-border-color: #0e3354;
+  --fc-event-text-color: #fff;
+  --fc-today-bg-color: rgba(21, 76, 121, 0.1);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 640px) {
+  .calendar-container .fc {
+    font-size: 0.75rem;
+  }
+  
+  .calendar-container .fc .fc-toolbar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .calendar-container .fc .fc-toolbar-title {
+    font-size: 1.1rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.25rem;
+  }
+  
+  .calendar-container .fc .fc-header-toolbar {
+    margin-bottom: 0.75rem;
+  }
+  
+  .calendar-container .fc .fc-button {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.7rem;
+  }
+  
+  .calendar-container .fc .fc-daygrid-day-number {
+    padding: 2px;
+  }
+  
+  .calendar-container .fc .fc-col-header-cell-cushion {
+    padding: 4px 2px;
+  }
+  
+  .calendar-container .fc .fc-daygrid-event {
+    padding: 1px 2px;
+  }
+  
+  .calendar-container .fc .fc-event-title {
+    font-size: 0.7rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

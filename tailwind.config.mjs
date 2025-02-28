@@ -36,6 +36,10 @@ export default {
           '100%': { opacity: '1', transform: 'scale(1)' },
         },
       },
+      screens: {
+        '3xl': '1920px',
+        '4xl': '2560px',
+      },
     },
   },
 };

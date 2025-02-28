@@ -9,7 +9,7 @@ import { FaUserGroup } from "react-icons/fa6";
 import { FaPen } from "react-icons/fa";
 import { FaCheck } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
-// import Terms from '@/components/catering/Terms';                     
+import Guidelines from '@/components/Guidelines';                     
 
 export default function Page() {
     const [formData, setFormData] = useState({
@@ -71,87 +71,45 @@ export default function Page() {
     const minDate = oneMonthFromToday.toISOString().split('T')[0];
 
     return (
-        <div className="flex flex-col pt-24 pb-8 justify-center items-center">
+        <div className="flex flex-col pt-16 md:pt-20 sm:pt-16 pb-8 justify-center items-center">
             <Pageheader 
                 header={'Catering'}
                 description={'Book us for your next event!'}
                 img={"url('images/banners/cateringBanner.jpg')"} 
                 padding={20}
             />
-            <div className="w-full max-w-2xl mx-auto mt-8">
-                <div className="bg-gradient-to-br from-white to-accent/5 rounded-xl shadow-lg border border-accent/20 overflow-hidden">
-                    {/* Header Section */}
-                    <div className="bg-accent/10 px-4 py-5 md:py-6 border-b border-accent/20">
-                        <h3 className="text-2xl md:text-3xl text-primary text-center font-bold">
-                            Catering Guidelines
-                        </h3>
-                        <p className="mt-2 text-base md:text-lg text-center text-gray-700">
-                            Please review our catering policies before submitting your request
-                        </p>
-                    </div>
-                    
-                    {/* Guidelines List */}
-                    <div className="p-5 md:p-8">
-                        <ul className="space-y-4 md:space-y-5">
-                            <li className="flex items-start gap-3 md:gap-4">
-                                <div className="bg-accent/10 rounded-full p-1.5 mt-0.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 md:h-5 md:w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                </div>
-                                <p className="text-sm md:text-base">
-                                    Catering reservations must be made at least <span className="font-bold text-primary">one month</span> in advance.
-                                </p>
-                            </li>
-                            
-                            <li className="flex items-start gap-3 md:gap-4">
-                                <div className="bg-accent/10 rounded-full p-1.5 mt-0.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 md:h-5 md:w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                </div>
-                                <p className="text-sm md:text-base">
-                                    Our catering services can accommodate <span className="font-bold text-primary">up to 300</span> guests.
-                                </p>
-                            </li>
-                            
-                            <li className="flex items-start gap-3 md:gap-4">
-                                <div className="bg-accent/10 rounded-full p-1.5 mt-0.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 md:h-5 md:w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                </div>
-                                <p className="text-sm md:text-base">
-                                    Please provide any special requests or dietary restrictions in the message field.
-                                </p>
-                            </li>
-                            
-                            <li className="flex items-start gap-3 md:gap-4">
-                                <div className="bg-accent/10 rounded-full p-1.5 mt-0.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 md:h-5 md:w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                </div>
-                                <p className="text-sm md:text-base">
-                                    You can cancel the catering <span className="font-bold text-primary">a week before</span> the event.
-                                </p>
-                            </li>
-                            
-                            <li className="flex items-start gap-3 md:gap-4">
-                                <div className="bg-accent/10 rounded-full p-1.5 mt-0.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 md:h-5 md:w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                </div>
-                                <p className="text-sm md:text-base">
-                                    We provide our service between <span className="font-bold text-primary">12pm to 1am</span>.
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            {/* <Terms /> */}
+            
+            <Guidelines 
+                title="Catering Guidelines" 
+                subtitle="Please read before making a catering booking." 
+                guidelines={[
+                    {
+                        prefix: "We require a minimum of ",
+                        emphasis: "1 month",
+                        suffix: " notice for catering requests."
+                    },
+                    {
+                        prefix: "Catering services are available for events with ",
+                        emphasis: "25-300 guests",
+                        suffix: "."
+                    },
+                    {
+                        prefix: "Please provide details such as the ",
+                        emphasis: "event date, location and time",
+                        suffix: " of the event."
+                    },
+                    {
+                        prefix: "Specify any ",
+                        emphasis: "special requests",
+                        suffix: " such as themes, dietary restrictions, etc."
+                    },
+                    {
+                        prefix: "We offer catering services for various events including ",
+                        emphasis: "weddings, birthdays, corporate events",
+                        suffix: ", and more."
+                    }
+                ]}
+            />
             <form onSubmit={handleSubmit} className="w-full max-w-lg mt-8 bg-white rounded-lg shadow-lg p-8 border border-accent/20">
                 <h3 className="text-2xl font-bold mb-6 text-primary text-center">Catering Request</h3>
                 <div className="flex flex-col gap-5">

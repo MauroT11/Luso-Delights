@@ -4,7 +4,8 @@ import React, { useState, useEffect } from "react";
 import Pageheader from '@/components/Pageheader';
 import Dishes from '@/components/menu/Dishes';
 import Drinks from '@/components/menu/Drinks';
-import { createClient } from '@supabase/supabase-js'
+import { createClient } from '@supabase/supabase-js';
+import { FaArrowUp } from 'react-icons/fa';
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_KEY || '';
@@ -62,8 +63,15 @@ export default function Page() {
         fetchData();
     }, []);
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
     return (
-        <div className="flex flex-col pt-20 md:pt-24 pb-8 justify-center items-center">
+        <div className="flex flex-col pt-16 md:pt-20 sm:pt-16 pb-8 justify-center items-center">
             <div className="flex flex-col gap-6 md:gap-8 items-center w-full">
                 <Pageheader 
                 header={'Menu'}
@@ -145,9 +153,17 @@ export default function Page() {
                         <h2 className="text-2xl md:text-3xl text-primary font-bold">Drinks</h2>
                         <Drinks drinks={drinks || []} />
                     </div>
+                    <div className="flex justify-center mt-16 mb-4">
+                        <button 
+                            onClick={scrollToTop}
+                            className="btn btn-primary btn-circle shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
+                            aria-label="Back to top"
+                        >
+                            <FaArrowUp className="text-lg" />
+                        </button>
+                    </div>
                 </div>
             )}
-            
         </div>
     );
 }

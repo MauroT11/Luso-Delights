@@ -22,7 +22,7 @@ import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaClock } from 'react-icons/fa';
 export default function Page() {
 
     return (
-        <div className="flex flex-col pt-20 md:pt-24 pb-8 justify-center items-center">
+        <div className="flex flex-col pt-16 md:pt-20 sm:pt-16 pb-8 justify-center items-center">
             <Pageheader 
                 header={'Our Story'}
                 description={'Welcome to Sabor Delights! We are passionate about bringing you the best culinary experiences.'}

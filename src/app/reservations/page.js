@@ -8,6 +8,7 @@ import { FaPhone } from "react-icons/fa6";
 import { FaUserGroup } from "react-icons/fa6";
 import { FaPen } from "react-icons/fa";
 import { FaCheck } from "react-icons/fa";
+import Guidelines from '@/components/Guidelines';
 
 
 export default function Page() {
@@ -80,12 +81,21 @@ export default function Page() {
     };
 
     return (
-        <div className="flex flex-col pt-24 pb-8 justify-center items-center">
+        <div className="flex flex-col pt-16 md:pt-20 sm:pt-16 pb-8 justify-center items-center">
             <Pageheader 
                 header={'Reservations'}
                 description={'Book a table at our restaurant!'}
                 img={"url('images/banners/reservationBanner.jpg')"} 
                 padding={28}
+            />
+            <Guidelines
+                title="Reservation Guidelines"
+                subtitle="Please read the following guidelines before making a reservation."
+                guidelines={[
+                    {prefix: 'Reservations are available from ', emphasis: '3PM to 10PM', suffix: '.'},
+                    {prefix: 'We accept reservations for up to ', emphasis: '10 guests', suffix: '.'},
+                    {prefix: 'Please make a reservation at least ', emphasis: '24 hours', suffix: ' in advance.'},
+                ]}
             />
             <form onSubmit={handleSubmit} className="w-full max-w-lg mt-8 bg-white rounded-lg shadow-lg p-8 border border-accent/20">
                 <h3 className="text-2xl font-bold mb-6 text-primary text-center">Make a Reservation</h3>
@@ -158,18 +168,31 @@ export default function Page() {
                         <label className="label">
                             <span className="label-text text-primary font-semibold">Select a Time* (3PM-10PM)</span>
                         </label>
-                        <input 
-                            required 
-                            type="time" 
-                            id="time" 
-                            min="15:00" 
-                            max="22:00" 
-                            step="1800" 
-                            name="time" 
-                            value={formData.time} 
-                            onChange={handleChange} 
-                            className="input input-accent w-full hover:shadow-md transition duration-300 focus:shadow-lg border-2 focus:border-primary rounded-lg" 
-                        />
+                        <select
+                            required
+                            id="time"
+                            name="time"
+                            value={formData.time}
+                            onChange={handleChange}
+                            className="select select-accent w-full hover:shadow-md transition duration-300 focus:shadow-lg border-2 focus:border-primary rounded-lg"
+                        >
+                            <option value="" disabled>Select a time</option>
+                            <option value="15:00">3:00 PM</option>
+                            <option value="15:30">4:00 PM</option>
+                            <option value="16:00">4:00 PM</option>
+                            <option value="16:30">4:30 PM</option>
+                            <option value="17:00">5:00 PM</option>
+                            <option value="17:30">5:30 PM</option>
+                            <option value="18:00">6:00 PM</option>
+                            <option value="18:30">6:30 PM</option>
+                            <option value="19:00">7:00 PM</option>
+                            <option value="19:30">7:30 PM</option>
+                            <option value="20:00">8:00 PM</option>
+                            <option value="20:30">8:30 PM</option>
+                            <option value="21:00">9:00 PM</option>
+                            <option value="21:30">9:30 PM</option>
+                            <option value="22:00">10:00 PM</option>
+                        </select>
                     </div>
                     
                     <div className="form-control">

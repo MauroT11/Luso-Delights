@@ -12,7 +12,7 @@ export default function Newsletter() {
         // Handle form submission logic here
         console.log('Email submitted:', email);
         setIsSubmitted(true);
-        setTimeout(() => setIsSubmitted(false), 3000);
+        // setTimeout(() => setIsSubmitted(false), 10000);
         setEmail('');
     };
 
