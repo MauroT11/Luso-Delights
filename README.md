@@ -2,7 +2,7 @@
 
 A modern restaurant website for Luso Delights, a Portuguese restaurant offering authentic flavors with a modern twist. This project showcases a complete dining establishment web presence with reservations, menu browsing, catering services, and more.
 
-## **This is a fictional Restaurant**
+**This is a fictional Restaurant**
 
 ## 📋 Overview
 
