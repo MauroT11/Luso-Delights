@@ -56,7 +56,7 @@ export default function Header() {
       <div className="container mx-auto px-4 md:px-6 lg:px-8 flex justify-between items-center">
         {/* Logo */}
         <Link 
-          className={`text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl text-primary hover:text-accent transition-all duration-200 hover:scale-105 ${mrDafoe.className}`} 
+          className={`text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl text-primary hover:text-accent transition-all duration-200 hover:scale-105 ${mrDafoe.className}`} 
           href="/"
           onClick={handleLinkClick}
         >
@@ -65,7 +65,7 @@ export default function Header() {
         
         {/* Desktop Navigation */}
         <nav className="hidden md:block">
-          <ul className={`flex text-lg lg:text-xl 2xl:text-2xl 3xl:text-3xl gap-1 lg:gap-4 xl:gap-6 2xl:gap-8 3xl:gap-10 space-x-2 lg:space-x-4 font-bold text-primary`}>
+          <ul className={`flex text-lg lg:text-xl 2xl:text-2xl gap-1 lg:gap-4 xl:gap-6 2xl:gap-8 space-x-2 lg:space-x-4 font-bold text-primary`}>
             <li><Link href="/menu" className="hover:text-accent transition-colors duration-200 px-2 py-1 2xl:px-3 2xl:py-2">Menu</Link></li>
             <li><Link href="/reservations" className="hover:text-accent transition-colors duration-200 px-2 py-1 2xl:px-3 2xl:py-2">Reservations</Link></li>
             <li><Link href="/catering" className="hover:text-accent transition-colors duration-200 px-2 py-1 2xl:px-3 2xl:py-2">Catering</Link></li>
