@@ -18,6 +18,10 @@ const mrDafoe = Mr_Dafoe({
 export const metadata = {
   title: "Luso Delights",
   description: "Experience Authentic Portuguese Flavors",
+  icons: {
+    icon: '/logo.png',
+    apple: '/logo.png',
+  },
 };
 
 export default function RootLayout({ children }) {

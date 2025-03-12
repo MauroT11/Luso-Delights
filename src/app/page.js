@@ -14,7 +14,7 @@ import food5 from "../../public/images/food/food5.jpg";
 import food6 from "../../public/images/food/food6.jpg";
 import ScrollAnimation from "@/components/ScrollAnimation";
 
-export default function Home() {
+export default function page() {
   return (
     <div className="flex flex-col pt-16 sm:pt-18 md:pt-20 2xl:pt-24 3xl:pt-28 pb-6 md:pb-8 2xl:pb-10 3xl:pb-12 gap-16 sm:gap-20 md:gap-24 lg:gap-32 2xl:gap-40 3xl:gap-48 justify-center items-center">
       <div 
