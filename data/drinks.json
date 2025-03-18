@@ -1,0 +1,104 @@
+{
+  "drinks": [
+    {
+      "drink_id": 1,
+      "name": "Água",
+      "description": "Fresh bottled water",
+      "price": 1.50,
+      "is_alcoholic": false,
+      "created_at": "2025-01-21 16:44:13.417546",
+      "category_id": 4,
+      "alcohol_percentage": null
+    },
+    {
+      "drink_id": 2,
+      "name": "Sumol Laranja",
+      "description": "Popular Portuguese orange soda",
+      "price": 2.50,
+      "is_alcoholic": false,
+      "created_at": "2025-01-21 16:44:13.417546",
+      "category_id": 4,
+      "alcohol_percentage": null
+    },
+    {
+      "drink_id": 3,
+      "name": "Sumol Ananás",
+      "description": "Popular Portuguese pineapple soda",
+      "price": 2.50,
+      "is_alcoholic": false,
+      "created_at": "2025-01-21 16:44:13.417546",
+      "category_id": 4,
+      "alcohol_percentage": null
+    },
+    {
+      "drink_id": 4,
+      "name": "Vinho Verde",
+      "description": "Light and crisp Portuguese green wine",
+      "price": 12.00,
+      "is_alcoholic": true,
+      "created_at": "2025-01-21 16:44:13.417546",
+      "category_id": 4,
+      "alcohol_percentage": 9.00
+    },
+    {
+      "drink_id": 5,
+      "name": "Porto Tinto",
+      "description": "Rich and sweet red Port wine",
+      "price": 14.00,
+      "is_alcoholic": true,
+      "created_at": "2025-01-21 16:44:13.417546",
+      "category_id": 4,
+      "alcohol_percentage": 20.00
+    },
+    {
+      "drink_id": 6,
+      "name": "Cerveja Sagres",
+      "description": "Refreshing Portuguese beer",
+      "price": 3.00,
+      "is_alcoholic": true,
+      "created_at": "2025-01-21 16:44:13.417546",
+      "category_id": 4,
+      "alcohol_percentage": 5.00
+    },
+    {
+      "drink_id": 7,
+      "name": "Licor Beirão",
+      "description": "Traditional Portuguese herbal liqueur",
+      "price": 5.00,
+      "is_alcoholic": true,
+      "created_at": "2025-01-21 16:44:13.417546",
+      "category_id": 4,
+      "alcohol_percentage": 22.00
+    },
+    {
+      "drink_id": 8,
+      "name": "Espresso",
+      "description": "Authentic Portuguese espresso coffee",
+      "price": 1.20,
+      "is_alcoholic": false,
+      "created_at": "2025-01-21 16:44:13.417546",
+      "category_id": 4,
+      "alcohol_percentage": null
+    },
+    {
+      "drink_id": 9,
+      "name": "Chá de Limão",
+      "description": "Portuguese lemon tea",
+      "price": 1.50,
+      "is_alcoholic": false,
+      "created_at": "2025-01-21 16:44:13.417546",
+      "category_id": 4,
+      "alcohol_percentage": null
+    },
+    {
+      "drink_id": 10,
+      "name": "Cocktail de Frutas",
+      "description": "Non-alcoholic fruit cocktail",
+      "price": 4.00,
+      "is_alcoholic": false,
+      "created_at": "2025-01-21 16:44:13.417546",
+      "category_id": 4,
+      "alcohol_percentage": null
+    }
+  ]
+}

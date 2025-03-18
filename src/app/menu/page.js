@@ -4,63 +4,17 @@ import React, { useState, useEffect } from "react";
 import Pageheader from '@/components/Pageheader';
 import Dishes from '@/components/menu/Dishes';
 import Drinks from '@/components/menu/Drinks';
-import { createClient } from '@supabase/supabase-js';
 import { FaArrowUp } from 'react-icons/fa';
-
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
-const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_KEY || '';
-const supabase = createClient(supabaseUrl, supabaseKey);
+import { dishes } from '../../../data/dishes';
+import { drinks } from '../../../data/drinks';
+import { sides } from '../../../data/sides';
 
 export default function Page() {
-
-    const [dishes, setDishes] = useState([]);
-    const [drinks, setDrinks] = useState([]);
-    const [sides, setSides] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        const fetchDishes = async () => {
-            let { data: dishes, error } = await supabase
-                .from('dishes')
-                .select('*')
-            if (error) {
-                console.log('error', error)
-            } else {
-                setDishes(dishes)
-            } 
-        }
-
-        const fetchDrinks = async () => {
-            let { data: drinks, error } = await supabase
-                .from('drinks')
-                .select('*')
-            if (error) {
-                console.log('error', error)
-            } else {
-                setDrinks(drinks)
-            } 
-        }
-
-        const fetchSides = async () => {
-            let { data: sides, error } = await supabase
-                .from('sides')
-                .select('*')
-            if (error) {
-                console.log('error', error)
-            } else {
-                setSides(sides)
-            } 
-        }
-
-        const fetchData = async () => {
-            try {
-                await Promise.all([fetchDishes(), fetchDrinks(), fetchSides()]);
-            } finally {
-                setIsLoading(false);
-            }
-        };
-        
-        fetchData();
+        // Simulate loading to prevent flash
+        setTimeout(() => setIsLoading(false), 500);
     }, []);
 
     const scrollToTop = () => {

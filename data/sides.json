@@ -1,0 +1,84 @@
+{
+  "sides": [
+    {
+      "dish_id": "1",
+      "name": "Batatas a Murro",
+      "description": "Crushed potatoes baked with garlic and olive oil",
+      "price": 3.50,
+      "category": "sides",
+      "is_vegetarian": true,
+      "is_gluten_free": true,
+      "is_spicy": false
+    },
+    {
+      "dish_id": "2",
+      "name": "Arroz Branco",
+      "description": "Steamed white rice",
+      "price": 2.50,
+      "category": "sides",
+      "is_vegetarian": true,
+      "is_gluten_free": true,
+      "is_spicy": false
+    },
+    {
+      "dish_id": "3",
+      "name": "Salada Mista",
+      "description": "Fresh mixed salad with lettuce, tomato, and onion",
+      "price": 3.00,
+      "category": "sides",
+      "is_vegetarian": true,
+      "is_gluten_free": true,
+      "is_spicy": false
+    },
+    {
+      "dish_id": "4",
+      "name": "Feijão Preto",
+      "description": "Seasoned black beans",
+      "price": 3.00,
+      "category": "sides",
+      "is_vegetarian": true,
+      "is_gluten_free": true,
+      "is_spicy": false
+    },
+    {
+      "dish_id": "5",
+      "name": "Batatas Fritas",
+      "description": "Crispy fried potatoes",
+      "price": 2.50,
+      "category": "sides",
+      "is_vegetarian": true,
+      "is_gluten_free": true,
+      "is_spicy": false
+    },
+    {
+      "dish_id": "6",
+      "name": "Espinafres Salteados",
+      "description": "Sautéed spinach with garlic",
+      "price": 4.00,
+      "category": "sides",
+      "is_vegetarian": true,
+      "is_gluten_free": true,
+      "is_spicy": false
+    },
+    {
+      "dish_id": "7",
+      "name": "Piri-Piri Batatas",
+      "description": "Spicy roasted potatoes with piri-piri seasoning",
+      "price": 4.00,
+      "category": "sides",
+      "is_vegetarian": true,
+      "is_gluten_free": true,
+      "is_spicy": true
+    },
+    {
+      "dish_id": "8",
+      "name": "Broa de Milho",
+      "description": "Traditional Portuguese cornbread",
+      "price": 3.50,
+      "category": "sides",
+      "is_vegetarian": true,
+      "is_gluten_free": false,
+      "is_spicy": false
+    }
+  ]
+}

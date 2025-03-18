@@ -1,0 +1,24 @@
+{
+  "categories": [
+    {
+        "id": 1,
+        "name": "Starters",
+        "description": "Entradas - Traditional Portuguese appetizers to start your meal"
+    },
+    {
+      "id": 2,
+      "name": "Main Dishes",
+      "description": "Pratos Principais - Authentic Portuguese main dishes"
+    },
+    {
+      "id": 3,
+      "name": "Desserts",
+      "description": "Sobremesas - Sweet treats to finish your meal"
+    },
+    {
+      "id": 4,
+      "name": "Drinks",
+      "description": "Bebidas - A selection of traditional and modern beverages"
+    }
+  ]
+}
